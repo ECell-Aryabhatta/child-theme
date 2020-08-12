@@ -21,4 +21,11 @@ if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
+// Adding custom js
+
+function ecell_js() {
+    wp_enqueue_script('ecell', get_stylesheet_directory_uri() . '/js/ecell.js'. false, true);
+}
+
+add_action('wp_enqueue_scripts', 'ecell_js');
 // END ENQUEUE PARENT ACTION

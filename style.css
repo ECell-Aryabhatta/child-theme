@@ -16,9 +16,15 @@ Updated: 2020-08-07 10:58:27
     box-shadow:none;
     top:0;
     width:100%;
+    transition: 0.3s linear;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-.nav-colored {
+.solid {
     background:black!important;
+    transition: 0.3s linear;
 }
 .container .navbar {
     justify-content:space-between;
@@ -35,7 +41,8 @@ Updated: 2020-08-07 10:58:27
 }
 #page-sub-header {
     height:100vh;
-    
+    background-repeat:no-repeat!important;
+    background-size:cover!important;
 }
 #page-sub-header .container {
     height:100%;
@@ -43,23 +50,26 @@ Updated: 2020-08-07 10:58:27
     flex-direction:column;
     justify-content:center;
     align-items: flex-start;
+    
 }
 #page-sub-header .container h1{
-    font-size:2.3rem!important;
+    font-size:3rem!important;
     color:white!important;
     font-family: 'Mulish';
     font-weight:800;
+    margin-bottom:1rem;
 }
 #page-sub-header .container p{
     color:white!important;
     margin-left:0;
     text-align:left;
     font-size:1.8rem;
+    margin-bottom:2rem;
 }
 #about-us {
-    color:white;
     border:1px solid white;
     border-radius:0;
     font-size:1.2rem;
-    /* background:transparent; */
+    color:white;
+    background:transparent;
 }
